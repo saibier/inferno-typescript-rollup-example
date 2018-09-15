@@ -1,0 +1,6 @@
+
+**/node_modules/
+
+*.ini
+.DS_Store
+.vscode

@@ -1,0 +1,23 @@
+{
+	"name": "inferno-typescript-rollup-example",
+	"version": "1.0.0",
+	"description": "An Inferno + TypeScript + Rollup example",
+	"author": "Isaiah Bierbrauer",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/cli": "^7.0.0",
+		"@babel/core": "^7.0.0",
+		"@babel/preset-env": "^7.0.0",
+		"@babel/preset-typescript": "^7.0.0",
+		"babel-plugin-inferno": "^5.1.0",
+		"inferno": "^5.6.1",
+		"rollup": "^0.65.2",
+		"rollup-plugin-alias": "^1.4.0",
+		"rollup-plugin-babel": "^4.0.3",
+		"@ampproject/rollup-plugin-closure-compiler": "^0.6.2",
+		"rollup-plugin-commonjs": "^9.1.6",
+		"rollup-plugin-node-resolve": "^3.4.0",
+		"rollup-plugin-replace": "^2.0.0",
+		"typescript": "^3.0.3"
+	}
+}

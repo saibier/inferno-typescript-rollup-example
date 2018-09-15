@@ -1,0 +1,12 @@
+
+{
+	"compilerOptions": {
+		"target": "es2017",
+		"lib": ["dom", "es2017"],
+		"moduleResolution": "node",
+		"jsx": "preserve",
+		"strict": true,
+		"noEmit": true
+	},
+	"include": ["src"]
+}
