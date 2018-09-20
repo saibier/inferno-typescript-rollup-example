@@ -28,7 +28,7 @@ export default {
 		// https://github.com/rollup/rollup-plugin-babel#usage
 		// https://babeljs.io/docs/en/options
 		babel({
-			extensions, // See `npx babel --help`
+			extensions, // If we don’t set this, Babel will ignore our TypeScript files. See `npx babel --help`
 			presets: [
 				// https://babeljs.io/docs/en/babel-preset-env#options
 				isProduction ? ["@babel/preset-env", {
@@ -56,8 +56,9 @@ export default {
 		}),
 
 		// https://github.com/rollup/rollup-plugin-commonjs#usage
-		commonjs({
-			include: 'node_modules/**'
+		isProduction && commonjs({
+			// https://github.com/zloirock/core-js uses CommonJS
+			include: 'node_modules/core-js/**'
 		}),
 
 		// https://github.com/google/closure-compiler/wiki/Flags-and-Options
